@@ -1,0 +1,5 @@
+model EX4_v2.mod;
+data EX4_v2.dat;
+option solver gurobi;
+solve;
+display nbObjet;

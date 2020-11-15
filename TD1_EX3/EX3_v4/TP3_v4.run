@@ -1,0 +1,4 @@
+model TP3_v4.mod;
+data TP3_v4.dat;
+solve;
+display qte_produite;

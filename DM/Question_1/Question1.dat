@@ -1,0 +1,43 @@
+# Auteur : Viseux Eliot , Vanderplancke Thomas
+# DM ML Question 1 data :
+
+# Le tableau PRODUIT ne contient que des carottes pour la question 1
+set PRODUIT := carottes;
+
+# Le tableau TRAJET contient 4 lignes représentant les données pour les 3 trajets
+# 1 = A vers B
+# 2 = B vers C
+# 3 = C vers A
+# 4 pour sauver la valeur de A stock de samedi 
+# !!! AJOUT APRES 2 SEMAINES !!! : nous nous sommes rendu compte que l'on pouvait aussi supprimer la ligne 4 est faire un appel au trajet 1 directement au lieu de faire une 4e ligne pour sauver la valeur de A).
+set TRAJET := 1 2 3 4;
+
+# La valeur poid maximal du vélo cargo, ici 35 Kilos.
+param cargo_poid := 35;
+
+# La valeur volume maximal du vélo cargo, ici 100 Litres
+param cargo_volume := 100;
+
+# Le tableau TRAJET :
+# Le tableau est de cette forme :
+
+#-----|---------|--------------|
+# 1 : |samedi_A |min_stock_de_B|
+#-----|---------|--------------|
+# 2 : |samedi_B |min_stock_de_C|
+#-----|---------|--------------|
+# 3 : |samedi_C |min_stock_de_A|
+#-----|---------|--------------|
+# 4 : |samedi_A |min_stock_de_A|
+#-----|---------|--------------|
+
+param: samedi min_stock :=
+1 10 25
+2 20 25
+3 50 25
+4 10 25;
+
+# Le tableau PRODUIT avec ses trois paramètres.
+param: fragile poid volume :=
+carottes 0 1 0.8;
+

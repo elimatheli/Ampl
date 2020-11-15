@@ -1,0 +1,5 @@
+model Question1.mod;
+data Question1.dat;
+solve;
+display chargement;
+display dechargement;

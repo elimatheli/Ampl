@@ -1,0 +1,4 @@
+model TP2.mod;
+data TP2.dat;
+solve;
+display nbPub.lb, nbPub, nbPub.ub;

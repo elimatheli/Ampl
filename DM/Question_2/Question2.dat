@@ -1,0 +1,46 @@
+# Auteur : Viseux Eliot , Vanderplancke Thomas
+# DM ML Question 2 data :
+
+# Le tableau de tous les produits qui contient leurs caractéristiques.
+set PRODUIT := maroilles lait beurre carottes navets;
+
+# Le tableau des stock du samedi de produits pour chaque magasin.
+set STOCK_SAMEDI := maroilles lait beurre carottes navets ;
+
+# Le tableau des stock minimum de produtis pour chaque magasin.
+set STOCK_MIN := maroilles lait beurre carottes navets;
+
+# La constante de poid du vélo cargo, ici 35 Kilos.
+param cargo_poid := 35;
+
+# La constante de volume du vélo cargo, ici 100 Litres.
+param cargo_volume := 100;
+
+# Le tableau STOCK_SAMEDI :
+
+param: Abis Bbis Cbis :=
+maroilles 5 10 25
+lait 9 15 13
+beurre 5 7 15
+carottes 10 20 50
+navets 18 16 15;
+
+# Le tableau STOCK_MIN :
+
+param: A B C :=
+maroilles 15 11 14
+lait 10 12 8
+beurre 12 8 7
+carottes 25 25 25
+navets 13 16 18;
+
+
+# Le tableau PRODUIT :
+
+param: fragile poid volume :=
+maroilles 0 0.5 0.2
+lait 1 1 1
+beurre 1 0.25 0.1
+carottes 0 1 0.8
+navets 0 1 0.7;
+

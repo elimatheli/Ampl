@@ -1,0 +1,8 @@
+set PUB := television,magazine,radio;
+param budget := 1000000;
+param amount_of_people := 100;
+param: cout auditeurs temps min_pub pub_personne :=
+television 20000 1800000 1 10 1
+magazine 10000 1000000 1 2 3
+radio 2000 250000 1 2 0.14;
+

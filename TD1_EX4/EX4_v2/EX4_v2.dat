@@ -1,0 +1,9 @@
+set OBJETS := telephone_portable lecteur_DVD montre;
+param max_poids := 30;
+param max_volume := 200000;
+
+param: Poids Volume Valeur Disponible quantite_min :=
+telephone_portable 0.2 125 20 20 10
+lecteur_DVD 1 15000 35 15 8
+montre 0.3 50 10 50 45;
+

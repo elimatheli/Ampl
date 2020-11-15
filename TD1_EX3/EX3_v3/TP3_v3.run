@@ -1,0 +1,4 @@
+model TP3_v3.mod;
+data TP3_v3.dat;
+solve;
+
